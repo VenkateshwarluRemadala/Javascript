@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  color: black;
+  background-color:lightcoral;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+h2 {
+  color:black;
+  background-color:darkcyan;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  margin-left: 650px;
+  margin-right: 650px;
+}
+.btn {
+  background-color:darkgray;
+  color: white;
+}
+
+.txt {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Music Album details
+    </title>
+    <link rel="icon" href="./logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <h1>
+      MUSIC ALBUM
+    </h1>
+    <hr />
+    <input
+      class="btn"
+      type="button"
+      onclick="createObjectPrototype()"
+      value="Add album data"
+    /><br /><br />
+    <input
+      class="btn"
+      id="btn"
+      value="Get search list"
+      type="button"
+      onclick="getAlbumList()"
+    /><br />
+    <br />
+
+    <form style="visibility: hidden" id="form1">
+      <h2>Search by Album name</h2>
+      <select id="alb" style="width: 150px;" onchange="showAlb()">
+        <option value="none" selected disabled hidden>
+          Select an Option
+        </option> </select
+      ><br /><br />
+      <textarea class="txt" id="albData" cols="100" rows="7" disabled></textarea>
+    </form>
+
+    <form id="form2" style="visibility: hidden;">
+      <h2>Search by Song name</h2>
+      <select style="width: 150px;" name="songs" id="sng" onchange="showsng()">
+        <option value="none" selected disabled hidden>
+          Select an Option
+        </option> </select
+      ><br /><br />
+      <textarea class="txt" id="sngData" cols="100" rows="5" disabled ></textarea>
+    </form>
+    <form id="form3" style="visibility: hidden;">
+      <h2>Search by Artist name</h2>
+      <select style="width: 150px;" id="art" onchange="showart()">
+        <option value="none" selected disabled hidden
+          >Select an option</option
+        > </select
+      ><br /><br />
+      <textarea class="txt" id="artData" cols="100" rows="4" disabled></textarea>
+    </form>
+    <script src="./album.js"></script>
+    <script src="./domAccess.js"></script>
+    <script src="./class.js"></script>
+    <script src="./objectCreation.js"></script>
+    <script src="./showData.js"></script>
+  </body>
+</html>

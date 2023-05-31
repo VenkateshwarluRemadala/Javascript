@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <script src="./index.js" ></script> -->
+ 
+</head>
+<body>
+    <input type="text" id = "phone"/>
+    <h1 id = "show"></h1>
+<button onclick ="get()"> Get</button>
+
+    <script>
+     function get(){
+         let a = document.getElementById("phone").value;
+         let b;
+         if(a.length === 9){
+             b = a.split('')
+            for(let i in b){
+                b[i] = "X";
+
+                if(i>3){
+                    break
+                }
+            }
+         }
+         let c= b.join('')
+         console.log(c);
+     }
+
+    
+    </script>
+</body>
+</html>
